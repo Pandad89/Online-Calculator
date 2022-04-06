@@ -4,7 +4,7 @@ import "./Calculator.css"
 function Calculator() {
     // let [num, setNum] = useState("");
     let [result, setResult] = useState("");
-    let [operator, setOperator] = useState("");
+    // let [operator, setOperator] = useState("");
 
     //stores the value of numA
 
@@ -65,28 +65,28 @@ function Calculator() {
     const calc = () => {
         for (let i = 0; i < result.length; i++) {
             if (result[i] === "+") {
-                setOperator("+")
+                // setOperator("+")
                 setResult(add(Number(result.split("+")[0]), Number(result.split("+")[1])))
             } else if (result[i] === "-") {
-                setOperator("-")
+                // setOperator("-")
                 setResult(subtract(Number(result.split("-")[0]), Number(result.split("-")[1])))
             } else if (result[i] === "*") {
-                setOperator("*")
+                // setOperator("*")
                 setResult(multiply(Number(result.split("*")[0]), Number(result.split("*")[1])))
             } else if (result[i] === "/") {
-                setOperator("/")
+                // setOperator("/")
                 setResult(divide(Number(result.split("/")[0]), Number(result.split("/")[1])))
             } else if (result[i] === "²") {
-                setOperator("²")
+                // setOperator("²")
                 setResult(square(Number(result.split("²")[0])))
             } else if (result[i] === "³") {
-                setOperator("³")
+                // setOperator("³")
                 setResult(cube(Number(result.split("³")[0])))
             }else if (result[i] === "√") {
-                setOperator("√")
+                // setOperator("√")
                 setResult(squareRoot(Number(result.split("√")[1])))
             } else if (result[i] === "%") {
-                setOperator("%")
+                // setOperator("%")
                 setResult(modulo(Number(result.split("%")[0]), Number(result.split("%")[1])))
             }
         }
