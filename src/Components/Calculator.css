@@ -135,3 +135,140 @@
     background-color: grey;
     border-radius: 1rem;
 }
+@media screen and (max-width:412px){
+   .container{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/Background.jpg");
+    
+}
+.decorations{
+    display: flex;
+    justify-content: space-around;
+    gap: 12rem;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 1.5rem;
+    
+}
+.corpName{
+    width: 1rem;
+    color:burlywood;
+    transform: skew(340deg, 0deg);
+    font-size:large;
+}
+.calculator{
+    box-shadow: black -15px 10px 15px;
+    height: 40rem;
+    padding: 1rem;
+    width: 25rem;
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+}
+.filler{
+    z-index: -6;
+}
+.solarPanel{
+    /* border: 2px red solid; */
+    width: 8rem;
+    height: 2.5rem;
+    background-color: rgb(167, 83, 23);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 0;
+}
+.solarPanel__line{
+    width: .5rem;
+    height: 2.5rem;
+    background-color:saddlebrown;
+}
+.calculatorBody{
+    /* border: 2px red solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.calculatorBody input {
+    width: 100%;
+    height: 57px;
+    font-size: 2rem;
+    text-align: right;
+    padding-top: 1rem;
+    background-color: slategray;
+    text-align: left;
+
+}
+.calculatorButtons{
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    width: 25rem;
+    height: 40rem;
+
+}
+.operator{
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: slategray;
+    
+}
+.result{
+    width: 23rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    font-size: 4.15rem;
+    overflow: hidden;
+    font-family:'Segment7';
+    background-color: slategray;
+    margin-bottom: 1rem;
+}
+
+.button{
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    background-color: grey;
+    border-radius: 1rem;
+}
+.button__Calculate{
+    width: 100%;
+    height: calc(200% + 8px);
+    font-size: 2rem;
+    background-color: darkgreen;
+    border-radius: 1rem;
+}
+.button__Clear{
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    background-color: firebrick;
+    border-radius: 1rem;
+}
+.button__zero{
+    width: calc(200% + 8px);
+    height: 100%;
+    font-size: 2rem;
+    background-color: grey;
+    border-radius: 1rem;
+}     
+}
