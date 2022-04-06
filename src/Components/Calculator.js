@@ -8,9 +8,9 @@ function Calculator() {
 
     //stores the value of numA
 
-    const numValue = event => {
-        setNum(event.target.value);
-    }
+    // const numValue = event => {
+    //     setNum(event.target.value);
+    // }
 
     //addition function
 
